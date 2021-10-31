@@ -254,7 +254,7 @@ def change_password(password):
 	if status["Locked"] == 0x00:
 		# The device doesn't have a password.
 		old_passwd = ""
-	else if (password):
+	elif (password):
 		old_passwd = password
 	else:
 		old_passwd = getpass.getpass("Current password: ")
